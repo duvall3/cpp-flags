@@ -1,4 +1,4 @@
-# GDB with *ROLL*
+# cpp-flags
 ***Simple C++ program with intentional segfault trigger to test the GNU Debugger***
 
 **Files should include:**  
