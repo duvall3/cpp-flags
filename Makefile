@@ -24,7 +24,7 @@ RM = -/usr/bin/rm -f
 # | (above) - Format		"stop compiling if there are non-format warnings"	compiles quietly		  C+E-F
 
 # Uncomment one of the following lines to enable desired combination of flags:
-# CXXFLAGS := -std=c++11 -pedantic-errors -Wall -Wextra -Wshadow -m64 -DDEBUG -g					# C      
+CXXFLAGS := -std=c++11 -pedantic-errors -Wall -Wextra -Wshadow -m64 -DDEBUG -g					# C      
 # CXXFLAGS := -std=c++11 -pedantic-errors -Wall -Wextra -Wshadow -m64 -DDEBUG -g -Wno-format				# C-F    
 # CXXFLAGS := -std=c++11 -pedantic-errors -Wall -Wextra -Wshadow -m64 -DDEBUG -g -Werror				# C+E    
 # CXXFLAGS := -std=c++11 -pedantic-errors -Wall -Wextra -Wshadow -m64 -DDEBUG -g -Werror -Wno-format			# C+E-F  
