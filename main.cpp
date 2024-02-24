@@ -87,7 +87,6 @@ int roll( int n )
   return total;
 }
 
-
 // MAIN
 int main( int argc, char *argv[] )
 {

@@ -4,7 +4,7 @@
 # Written and tested using: g++ 9.4.0 // GNU Make 4.2.1 // cmake 3.16.3 
 # This was written and tested on a system running 64-bit Ubuntu 20.04.5 LTS
 #   using the following list of common debugging compiler flags:
-# "Common" = "-std=c++11 -pedantic-errors -Wall -Wextra -Wshadow -m64 -DDEBUG -g"
+# "Common" = "-std=c++11 -pedantic-errors -Wall -Wextra -Wshadow -DDEBUG -g"
 
 ## basics
 TARGET = roll
@@ -24,14 +24,14 @@ RM = -/usr/bin/rm -f
 # | (above) - Format		"stop compiling if there are non-format warnings"	compiles quietly		  C+E-F
 
 # Uncomment one of the following lines to enable desired combination of flags:
-CXXFLAGS := -std=c++11 -pedantic-errors -Wall -Wextra -Wshadow -m64 -DDEBUG -g					# C      
-# CXXFLAGS := -std=c++11 -pedantic-errors -Wall -Wextra -Wshadow -m64 -DDEBUG -g -Wno-format				# C-F    
-# CXXFLAGS := -std=c++11 -pedantic-errors -Wall -Wextra -Wshadow -m64 -DDEBUG -g -Werror				# C+E    
-# CXXFLAGS := -std=c++11 -pedantic-errors -Wall -Wextra -Wshadow -m64 -DDEBUG -g -Werror -Wno-format			# C+E-F  
+CXXFLAGS := -std=c++11 -pedantic-errors -Wall -Wextra -Wshadow -DDEBUG -g					# C      
+# CXXFLAGS := -std=c++11 -pedantic-errors -Wall -Wextra -Wshadow -DDEBUG -g -Wno-format				# C-F    
+# CXXFLAGS := -std=c++11 -pedantic-errors -Wall -Wextra -Wshadow -DDEBUG -g -Werror				# C+E    
+# CXXFLAGS := -std=c++11 -pedantic-errors -Wall -Wextra -Wshadow -DDEBUG -g -Werror -Wno-format			# C+E-F  
 
 # more compiler-flag combinations:
-# CXXFLAGS := -std=c++11 -m64 #-Werror -Wno-format
-# CXXFLAGS := -std=c++11 -m64 -W -Wall -Werror
+# CXXFLAGS := -std=c++11 #-Werror -Wno-format
+# CXXFLAGS := -std=c++11 -W -Wall -Werror
 
 
 ## targets and rules

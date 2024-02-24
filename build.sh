@@ -5,7 +5,7 @@
 # Note: The steps are spaced out for clarity and automation here;
 #   a typical interactive usage might look like this:
 #       mkdir -p build && cd build
-#       CXX=g++ CXXFLAGS="-m64 -Wall -g" cmake -S .. -B .
+#       CXX=g++ CXXFLAGS="-Wall -g" cmake -S .. -B .
 #       cmake --build . --target install
 
 # clean check
@@ -24,7 +24,7 @@ cd build/
 
 # set compiler and flags
 CXX=g++
-CXXFLAGS="-m64 -Wall -g"
+CXXFLAGS="-Wall -g"
 export CXX CXXFLAGS
 
 # configure the build
